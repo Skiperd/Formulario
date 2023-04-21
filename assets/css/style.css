@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+  --cor: rgb(13, 106, 134);
+  --cor1: rgb(9,48,56)
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  background: var(--cor);
+  margin: 0;
+  padding: 0;
+  font-family: Open sans, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.container {
+  border-radius: 5px;
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+}
+
+.tabela {
+  display: flex;
+  gap: 150px;
+}
+
+.tabela ul {
+  list-style: none;
+  margin: 0;
+}
+
+.imc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.imc p {
+  font-weight: 700;
+}
+
+.imc ul {
+  padding: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+}
+
+.resultado p {
+  font-weight: 700;
+}
+
+.resultado ul {
+  padding: 0;
+  display: grid;
+  gap: 5px;
+}
+
+.resultadop {
+
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 2px solid var(--cor);
+}
+
+form button {
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  background: var(--cor);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+}
+
+form button:hover {
+  background: var(--cor1);
+}
+
+.error-msg {
+  font-size: 12px;
+  color: red;
+}
